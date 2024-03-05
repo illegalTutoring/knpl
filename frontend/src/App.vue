@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ad58a75d87e7fa445b28ff7459ee8398327996e09b28f4fc381639486ecf499
-size 1603
+<script setup lang="ts">
+import { ref } from 'vue'
+import { RouterView } from 'vue-router'
+import navbar from './components/basicscreennavbar/navbar.vue';
+
+</script>
+
+<template>
+    <div>
+        <div>
+            <navbar />
+        </div>
+
+        <div>
+            <RouterView />
+        </div>
+    </div>
+</template>
+
