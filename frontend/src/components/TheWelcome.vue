@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ImageSlideComponent from '@/components/homeviewcomponents/ImageSlideComponent.vue'
+import ImageSlideComponent from './image-slide-components/ImageSlideComponent.vue';
 </script>
 
 <template>
