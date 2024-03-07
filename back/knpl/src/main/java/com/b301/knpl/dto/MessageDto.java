@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c15ad701873300cfa6aac021d9195c3257b09e7a838673ad7f14f5572a6f08f4
-size 256
+package com.b301.knpl.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+public class MessageDto {
+    String message;
+
+    @Builder
+    public MessageDto(String message) {
+        this.message = message;
+    }
+}

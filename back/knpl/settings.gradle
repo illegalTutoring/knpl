@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dab62d82a2575207cec3b77a4587ee9f60495fccf6e2905a7a42e2487395a870
-size 26
+rootProject.name = 'knpl'
