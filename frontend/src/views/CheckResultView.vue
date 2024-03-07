@@ -1,9 +1,10 @@
 <template>
     <div>
-        음원 결과
+        <CheckResultTitle/>
     </div>
 </template>
 
 <script setup lang="ts">
+import CheckResultTitle from '@/components/check-result-components/CheckResultTitle.vue';
 
 </script>
