@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { RouterView } from 'vue-router'
-import navbar from './components/basicscreennavbar/navbar.vue';
+import Navbar from '@/components/navbar-components/Navbar.vue';
 
 </script>
 
 <template>
     <div>
         <div>
-            <navbar />
+            <Navbar />
         </div>
 
         <div>
