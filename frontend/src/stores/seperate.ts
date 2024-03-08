@@ -3,6 +3,6 @@ import { defineStore } from 'pinia'
 
 export const useSeperateStore = defineStore('counter', () => {
     const check = ref(false) 
-  
-    return { check, }
+    const musicFile = ref('')
+    return { check, musicFile }
 })
