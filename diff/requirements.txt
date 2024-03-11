@@ -1,19 +1,3 @@
-torchcrepe
-praat-parselmouth
-scikit-image
-ipython
-ipykernel
-pyloudnorm
-webrtcvad-wheels
-h5py
-einops
-pycwt
-torchmetrics
-pytorch_lightning
-pyyaml
-tensorboard
-pydub
-
-#librosa==0.9.1
-#flask
-#flask_cors
+version https://git-lfs.github.com/spec/v1
+oid sha256:61c24faa0c2955ef8dd1ffbff303e2806f129abb17e81920302fd32867ca25e3
+size 302
