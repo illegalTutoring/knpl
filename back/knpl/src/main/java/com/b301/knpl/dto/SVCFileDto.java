@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94ea4b46fb6680818b2db39b848710adf65b31373c10a95b3fdd8e4cfa7fa92e
-size 499
+package com.b301.knpl.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+public class SVCFileDto {
+
+    private final String type;
+    private final String fileName;
+    private final Boolean select;
+    private final String voice;
+
+    @Builder
+    public SVCFileDto(String type, String fileName, Boolean select, String voice) {
+        this.type = type;
+        this.fileName = fileName;
+        this.select = select;
+        this.voice = voice;
+    }
+}
