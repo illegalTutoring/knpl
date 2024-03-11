@@ -10,10 +10,12 @@ public class SVCInfoDto {
 
     private String voice;
     private String svcCode;
+    private String outputExtension;
 
     @Builder
-    public SVCInfoDto(String voice, String svcCode) {
+    public SVCInfoDto(String voice, String svcCode, String outputExtension) {
         this.voice = voice;
         this.svcCode = svcCode;
+        this.outputExtension = outputExtension;
     }
 }
