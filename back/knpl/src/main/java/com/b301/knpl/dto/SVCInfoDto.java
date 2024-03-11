@@ -1,21 +1,3 @@
-package com.b301.knpl.dto;
-
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@NoArgsConstructor
-public class SVCInfoDto {
-
-    private String voice;
-    private String svcCode;
-    private String outputExtension;
-
-    @Builder
-    public SVCInfoDto(String voice, String svcCode, String outputExtension) {
-        this.voice = voice;
-        this.svcCode = svcCode;
-        this.outputExtension = outputExtension;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d05d1bc5d8560672f22442d9ac968a8ff5f6886bfe30c3d4e5b1261136b6796d
+size 459
