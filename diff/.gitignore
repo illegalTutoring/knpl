@@ -19,3 +19,4 @@ Winpython64-3.8.10.0dot.exe
 *.flac
 *.xmp
 *.zip
+celery_config.py
