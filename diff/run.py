@@ -1,16 +1,3 @@
-import importlib
-import os
-from utils.hparams import set_hparams, hparams
-set_hparams(print_hparams=False)
-
-def run_task():
-    assert hparams['task_cls'] != ''
-    pkg = ".".join(hparams["task_cls"].split(".")[:-1])
-    cls_name = hparams["task_cls"].split(".")[-1]
-    task_cls = getattr(importlib.import_module(pkg), cls_name)
-    task_cls.start()
-
-
-if __name__ == '__main__':
-    run_task()
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:76cbf6211d937fe458390ef79c851b4194bc3e7209cc299d7edc43049fa8b11c
+size 523
