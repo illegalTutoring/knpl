@@ -1,6 +1,6 @@
 <template>
     <div v-if="!store.check">
-        <MusicInputTitle/>
+        <MusicInputMain/>
     </div>
     <div v-else>
         <MusicInputComplete/>
@@ -8,8 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import MusicInputTitle from '@/components/music-input-components/MusicInputTitle.vue';
-import MusicInputComplete from '@/components/music-input-components/MusicInputComplete.vue';
+import MusicInputMain from '@/components/music-input/MusicInputMain.vue';
+import MusicInputComplete from '@/components/music-input/MusicInputComplete.vue';
 import { useSeperateStore } from '@/stores/seperate'
 
 const store = useSeperateStore()
