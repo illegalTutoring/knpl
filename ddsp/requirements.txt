@@ -25,3 +25,7 @@ pysimplegui
 sounddevice
 gradio
 jupyterlab
+requests
+requests_toolbelt
+eventlet
+ffmpeg-python
