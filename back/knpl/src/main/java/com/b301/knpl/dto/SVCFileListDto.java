@@ -11,12 +11,10 @@ import java.util.List;
 public class SVCFileListDto {
 
     public List<SVCFileDto> svcFileInfo;
-    public String svcCode;
 
     @Builder
-    public SVCFileListDto(List<SVCFileDto> svcFileDtoList, String svcCode) {
+    public SVCFileListDto(List<SVCFileDto> svcFileDtoList) {
         this.svcFileInfo = svcFileDtoList;
-        this.svcCode = svcCode;
     }
 
 
