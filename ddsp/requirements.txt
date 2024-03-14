@@ -1,27 +1,3 @@
-protobuf==3.19.1
-einops
-fairseq
-flask
-flask_cors
-gin
-gin_config
-librosa
-local_attention
-matplotlib
-numpy
-praat-parselmouth
-pyworld
-PyYAML
-resampy
-scikit_learn
-scipy
-SoundFile
-tensorboard
-torchcrepe
-tqdm
-transformers
-wave
-pysimplegui
-sounddevice
-gradio
-jupyterlab
+version https://git-lfs.github.com/spec/v1
+oid sha256:9806442799e6698cb4e5241518c7428fa44fd08b467773468f4a09ecb595cb7e
+size 262
