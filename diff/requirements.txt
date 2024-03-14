@@ -23,6 +23,7 @@ pydub
 #demucs
 
 #eventlet
+#conda activate diff-svc
 #celery -A celery_config worker --loglevel=info --pool=eventlet
 
 #pip uninstall librosa
