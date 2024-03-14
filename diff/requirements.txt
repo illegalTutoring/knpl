@@ -16,4 +16,21 @@ pydub
 
 #librosa==0.9.1
 #flask
+#celery
+#redis
 #flask_cors
+#diffq
+#demucs
+
+#eventlet
+#conda activate diff-svc
+#celery -A celery_config worker --loglevel=info --pool=eventlet
+
+#pip uninstall librosa
+#pip install librosa==0.9.1
+#pip install flask
+#pip install celery
+#pip install redis
+#pip install flask_cors
+#pip install diffq
+#pip install demucs
