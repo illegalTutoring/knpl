@@ -12,6 +12,6 @@ public interface CustomRepository {
 
     Task updateTask(Query q, Update u, Class<Task> t, String collectionName);
 
-
+    File findByChangeFileName(Query q, Class<File> f, String collectionName);
 
 }
