@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24b7d007ed6f5ab18fdea6c35f832231ab1eae1859f65d778fe8b9791b1f5597
-size 525
+<template>
+    <div>
+        <div v-if="!store.check">
+            <MusicSeperationMain/>
+        </div>
+        <div v-else>
+            <MusicSeperationResult/>
+        </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+import MusicSeperationMain from '@/components/music-seperation/MusicSeperationMain.vue';
+import MusicSeperationResult from '@/components/music-seperation/MusicSeperationResult.vue';
+import { useSeperateStore } from '@/stores/seperate'
+
+const store = useSeperateStore()
+</script>

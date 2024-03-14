@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import ImageSlideComponent from './image-slide-components/ImageSlideComponent.vue';
+import ImageSlide from './image-slide/ImageSlide.vue';
 </script>
 
 <template>
     <div>
-		<ImageSlideComponent/>
+		<ImageSlide/>
     </div>
 </template>

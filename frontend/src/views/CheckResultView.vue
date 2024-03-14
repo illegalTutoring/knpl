@@ -1,10 +1,10 @@
 <template>
     <div>
-        <CheckResultTitle/>
+        <CheckResult/>
     </div>
 </template>
 
 <script setup lang="ts">
-import CheckResultTitle from '@/components/check-result-components/CheckResultTitle.vue';
+import CheckResult from '@/components/check-result/CheckResult.vue';
 
 </script>
