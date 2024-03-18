@@ -1,15 +1,3 @@
-import os
-import shutil
-
-
-class AttrDict(dict):
-    def __init__(self, *args, **kwargs):
-        super(AttrDict, self).__init__(*args, **kwargs)
-        self.__dict__ = self
-
-
-def build_env(config, config_name, path):
-    t_path = os.path.join(path, config_name)
-    if config != t_path:
-        os.makedirs(path, exist_ok=True)
-        shutil.copyfile(config, os.path.join(path, config_name))
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6dba8aca9d5973535a8339bf142f10a4cac79df35956cf09bcb21882ff8cf98
+size 393

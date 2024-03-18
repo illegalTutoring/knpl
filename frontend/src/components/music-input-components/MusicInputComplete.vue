@@ -1,21 +1,3 @@
-<template>
-    <div>
-        완성됐습니다!
-        <button @click="back"> 완성됐습니다.</button>
-    </div>
-</template>
-
-<script setup lang="ts">
-import { useSeperateStore } from '@/stores/seperate'
-
-const store = useSeperateStore()
-
-const back = () => {
-    store.check = false
-}
-
-</script>
-
-<style scoped>
-
-</style>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f4c55c7d5fed24c212ababc2f7174690d8ae5d4475507c6189fabaf92e2db674
+size 329
