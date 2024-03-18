@@ -1,17 +1,3 @@
-package com.b301.knpl.repository;
-
-import com.b301.knpl.entity.File;
-import com.b301.knpl.entity.Task;
-import org.springframework.data.mongodb.core.query.Update;
-import org.springframework.data.mongodb.core.query.Query;
-
-
-public interface CustomRepository {
-
-    File updateFile(Query q, Update u, Class<File> f, String collectionName);
-
-    Task updateTask(Query q, Update u, Class<Task> t, String collectionName);
-
-    File findByChangeFileName(Query q, Class<File> f, String collectionName);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:099887c10670dc21ea913216e937a6a62b7d221c211be8ab0bd2e99ae47c416d
+size 578
