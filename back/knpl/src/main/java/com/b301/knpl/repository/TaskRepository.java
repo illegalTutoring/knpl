@@ -1,9 +1,3 @@
-package com.b301.knpl.repository;
-
-import com.b301.knpl.entity.Task;
-import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface TaskRepository extends MongoRepository<Task, String>, CustomRepository {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2518b43cdb12ad4832d3dbf9096020d5cb91858710a4d5e937cd9338c17e1cd8
+size 292

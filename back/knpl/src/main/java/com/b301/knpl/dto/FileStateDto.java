@@ -1,23 +1,3 @@
-package com.b301.knpl.dto;
-
-import lombok.Builder;
-import lombok.Getter;
-import lombok.ToString;
-
-@Getter
-@ToString
-public class FileStateDto {
-    private boolean vocals;
-    private boolean drums;
-    private boolean bass;
-    private boolean other;
-
-
-    @Builder
-    public FileStateDto(boolean vocals, boolean drums, boolean bass, boolean other) {
-        this.vocals = vocals;
-        this.drums = drums;
-        this.bass = bass;
-        this.other = other;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:92eccc7ae4219e6a5cd18ec56796166bdcff54ed47c1a75c6606b5ddc7b23434
+size 473
