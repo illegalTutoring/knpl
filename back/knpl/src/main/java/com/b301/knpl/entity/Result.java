@@ -1,17 +1,3 @@
-package com.b301.knpl.entity;
-
-import lombok.Builder;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-public class Result {
-
-    private Separation separation;
-    private SVC svc;
-
-    // 생성자, 게터, 세터 등 필요한 메서드들을 추가할 수 있습니다.
-    @Builder
-    public Result(Separation separation, SVC svc) {
-        this.separation = separation;
-        this.svc = svc;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a361bd1694fada488d15ad0b36ed12bdcdfdc86524d43dfd1d24e3bac5206fce
+size 618
