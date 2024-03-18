@@ -10,11 +10,13 @@ import java.util.List;
 @NoArgsConstructor
 public class SVCFileListDto {
 
-    public List<SVCFileDto> svcFileInfo;
+    private List<SVCFileDto> svcFile;
+    private String taskId;
 
     @Builder
-    public SVCFileListDto(List<SVCFileDto> svcFileDtoList) {
-        this.svcFileInfo = svcFileDtoList;
+    public SVCFileListDto(List<SVCFileDto> svcFileDtoList, String taskId) {
+        this.svcFile = svcFileDtoList;
+        this.taskId = taskId;
     }
 
 

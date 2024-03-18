@@ -9,14 +9,12 @@ import lombok.ToString;
 public class SVCFileDto {
 
     private final String type;
-    private final String fileName;
     private final Boolean select;
     private final String voice;
 
     @Builder
-    public SVCFileDto(String type, String fileName, Boolean select, String voice) {
+    public SVCFileDto(String type, Boolean select, String voice) {
         this.type = type;
-        this.fileName = fileName;
         this.select = select;
         this.voice = voice;
     }
