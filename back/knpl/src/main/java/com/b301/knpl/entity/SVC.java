@@ -1,14 +1,3 @@
-package com.b301.knpl.entity;
-
-import lombok.Builder;
-import org.springframework.data.mongodb.core.mapping.DBRef;
-
-public class SVC {
-    private String file;
-
-    // 생성자, 게터, 세터 등 필요한 메서드들을 추가할 수 있습니다.
-    @Builder
-    public SVC(String file) {
-        this.file = file;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d65bd873fbeb863395bd24f268535a0486306d80690739d575c660431b39cee4
+size 298
