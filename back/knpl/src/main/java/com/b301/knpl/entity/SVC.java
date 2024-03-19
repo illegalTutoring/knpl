@@ -1,8 +1,9 @@
 package com.b301.knpl.entity;
 
 import lombok.Builder;
-import org.springframework.data.mongodb.core.mapping.DBRef;
+import lombok.Getter;
 
+@Getter
 public class SVC {
     private String file;
 
