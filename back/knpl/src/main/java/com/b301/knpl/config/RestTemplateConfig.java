@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efce54e2760a1c2a043561f5e528843eaf41a1567dc8dc64615eb8f0d229306e
-size 340
+package com.b301.knpl.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
+@Configuration
+public class RestTemplateConfig {
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+}
