@@ -1,16 +1,3 @@
-package com.b301.knpl.controller;
-
-
-import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@Slf4j
-@RestController
-@RequestMapping("/api3")
-@Tag(name="api3", description = "내 음성 변환")
-public class DDIFController {
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0abd1a635206fd903c07c4c7bb566ddfbfab213d03d8460b5e7e997fc260bd4c
+size 5208
