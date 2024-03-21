@@ -1,18 +1,3 @@
-<template>
-    <div>
-        <div v-if="!store.check">
-            <MusicConversionMain/>
-        </div>
-        <div v-else>
-            <MusicConversionResult/>
-        </div>
-    </div>
-</template>
-
-<script setup lang="ts">
-import MusicConversionResult from '@/components/music-conversion/MusicConversionResult.vue';
-import MusicConversionMain from '@/components/music-conversion/MusicConversionMain.vue';
-import { useSeperateStore } from '@/stores/seperate'
-
-const store = useSeperateStore()
-</script>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a04b625daa08ea704b742187d636ef44621c72a07d30e76c0c5b658b617439e5
+size 513

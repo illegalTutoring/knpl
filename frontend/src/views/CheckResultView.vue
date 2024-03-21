@@ -1,7 +1,10 @@
 <template>
     <div>
-        <CheckResult/>
+        <div>
+            <CheckResult/>
+        </div>
     </div>
+    
 </template>
 
 <script setup lang="ts">
