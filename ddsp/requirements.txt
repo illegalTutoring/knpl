@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f86036866a1d8e93eb945c5a83f86689366265646e728a8b78efa2e46d75cd9
-size 312
+protobuf==3.19.1
+einops
+fairseq
+flask
+flask_cors
+gin
+gin_config
+librosa
+local_attention
+matplotlib
+numpy
+praat-parselmouth
+pyworld
+PyYAML
+resampy
+scikit_learn
+scipy
+SoundFile
+tensorboard
+torchcrepe
+tqdm
+transformers
+wave
+pysimplegui
+sounddevice
+gradio
+jupyterlab
+requests
+requests_toolbelt
+eventlet
+ffmpeg-python
