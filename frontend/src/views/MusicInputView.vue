@@ -1,16 +1,3 @@
-<template>
-    <div v-if="!store.check">
-        <MusicInputMain/>
-    </div>
-    <div v-else>
-        <MusicInputComplete/>
-    </div>
-</template>
-
-<script setup lang="ts">
-import MusicInputMain from '@/components/music-input/MusicInputMain.vue';
-import MusicInputComplete from '@/components/music-input/MusicInputComplete.vue';
-import { useSeperateStore } from '@/stores/seperate'
-
-const store = useSeperateStore()
-</script>
+version https://git-lfs.github.com/spec/v1
+oid sha256:19ebab440ee6809e60c95512542079ca72297ae6695cedab515b0002657af082
+size 577
