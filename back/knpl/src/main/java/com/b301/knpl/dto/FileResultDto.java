@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae2e78945294595c60d426c2156533b43e19dd4fef882716d14afe607803d4f6
-size 507
+package com.b301.knpl.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import java.util.List;
+
+@Getter
+@ToString
+@NoArgsConstructor
+public class FileResultDto {
+
+    private String fileName;
+    private String filePath;
+    private String message;
+
+    @Builder
+    public FileResultDto(String fileName, String filePath, String message) {
+        this.fileName = fileName;
+        this.filePath = filePath;
+        this.message = message;
+    }
+}
