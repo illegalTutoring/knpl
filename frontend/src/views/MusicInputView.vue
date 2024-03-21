@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae6899b1f73dfbe091c7ac3e7c04197da5a611fa15422cc42bec004ab531503c
-size 583
+<template>
+    <div>
+        <div v-if="!store.check">
+            <MusicInputMain/>
+        </div>
+        <div v-else>
+            <MusicInputComplete/>
+        </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+import MusicInputMain from '@/components/music-input/MusicInputMain.vue';
+import MusicInputComplete from '@/components/music-input/MusicInputComplete.vue';
+import { useMusicInputStore } from '@/stores/musicinput'
+
+const store = useMusicInputStore()
+</script>
