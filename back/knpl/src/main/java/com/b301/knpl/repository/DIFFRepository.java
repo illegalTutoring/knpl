@@ -14,4 +14,6 @@ public interface DIFFRepository {
     void saveCustom(Custom custom);
 
     void updateCustom(String token, String result);
+
+    Custom getCustomByTaskId(String token);
 }
