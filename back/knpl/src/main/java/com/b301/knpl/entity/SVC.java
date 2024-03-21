@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cf578314ce951309292259d9350904813af5e01f4304c872b3f6bf97e48fe3a
-size 506
+package com.b301.knpl.entity;
+
+import lombok.Builder;
+import lombok.Getter;
+
+@Getter
+public class SVC {
+    private String vocals;
+    private String drums;
+    private String bass;
+    private String other;
+
+    // 생성자, 게터, 세터 등 필요한 메서드들을 추가할 수 있습니다.
+    @Builder
+    public SVC(String vocals, String drums, String bass, String other) {
+        this.vocals = vocals;
+        this.drums = drums;
+        this.bass = bass;
+        this.other = other;
+    }
+}
