@@ -13,13 +13,13 @@ import java.util.List;
 public class FileResultDto {
 
     private String fileName;
-    private String filePath;
+    private String endPoint;
     private String message;
 
     @Builder
-    public FileResultDto(String fileName, String filePath, String message) {
+    public FileResultDto(String fileName, String endPoint, String message) {
         this.fileName = fileName;
-        this.filePath = filePath;
+        this.endPoint = endPoint;
         this.message = message;
     }
 }
