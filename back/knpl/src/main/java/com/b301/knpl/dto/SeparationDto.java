@@ -1,20 +1,3 @@
-package com.b301.knpl.dto;
-
-
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
-
-@Getter
-@ToString
-public class SeparationDto {
-
-    private final String type;
-    private final String fileName;
-
-    public SeparationDto(String type, String fileName) {
-        this.type = type;
-        this.fileName = fileName;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff51f546d18409c3ceeb579bac98957caeb3cea61365c4afc8d75ddb58c14b8b
+size 371

@@ -1,16 +1,3 @@
-package com.b301.knpl.entity;
-
-
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
-import org.springframework.data.mongodb.core.mapping.FieldType;
-
-@Document
-public class Separation {
-
-    private String vocal;
-    private String drum;
-    private String  bass;
-    private String session;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3673deef6ccf48fd88d81c57cf592753540f1e4de3e796eb99b314b3a9e77cfb
+size 365
