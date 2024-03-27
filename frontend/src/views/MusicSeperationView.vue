@@ -4,7 +4,7 @@
       <MusicSeperationMain />
     </div>
     <div v-else>
-      <!-- <MusicSeperationResult /> -->
+      <MusicSeperationResult />
     </div>
   </div>
 </template>
