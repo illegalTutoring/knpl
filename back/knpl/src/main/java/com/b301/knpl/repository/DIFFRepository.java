@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d86b093a28ae6fcd7ca9a2a50e27ed6e7c8c2112c9145cb4ef8fc7310d550e0
-size 505
+package com.b301.knpl.repository;
+
+import com.b301.knpl.entity.Custom;
+import com.b301.knpl.entity.File;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DIFFRepository {
+
+    boolean findByToken(String token);
+
+    void saveCustom(Custom custom);
+
+    void updateCustom(String token, String result);
+
+    Custom getCustomByTaskId(String token);
+}
