@@ -1,23 +1,3 @@
-package com.b301.knpl.dto;
-
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
-
-@Getter
-@ToString
-@NoArgsConstructor
-public class FileResultDto {
-
-    private String fileName;
-    private String endPoint;
-    private String message;
-
-    @Builder
-    public FileResultDto(String fileName, String endPoint, String message) {
-        this.fileName = fileName;
-        this.endPoint = endPoint;
-        this.message = message;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a2781a0e6d1c47168fd4d5edddb47966be910d057dd2e6cdd4f0c6ee9c987d7
+size 483
