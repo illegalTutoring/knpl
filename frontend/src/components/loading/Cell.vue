@@ -2,11 +2,10 @@
   <span class="cell">{{ "" }}</span>
 </template>
 
-<script>
-export default {
-  setup() {
-    return {}
-  },
-  components: {},
-};
-</script>
+<script setup></script>
+
+<style scoped lang="scss">
+// game
+@import "./scss/main.scss";
+@import "./scss/style.scss";
+</style>
