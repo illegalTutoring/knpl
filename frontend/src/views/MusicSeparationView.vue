@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <div v-if="!store.check">
-      <MusicSeparationMain />
+    <div>
+        <div v-if="!store.check">
+            <MusicSeparationMain />
+        </div>
+        <div v-else>
+            <MusicSeparationResult />
+        </div>
     </div>
-    <div v-else>
-      <MusicSeparationResult />
-    </div>
-  </div>
 </template>
 
 <script setup lang="ts">
