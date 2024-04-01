@@ -1,18 +1,3 @@
-<template>
-    <div>
-        <div v-if="!store.check">
-            <MusicSeparationMain />
-        </div>
-        <div v-else>
-            <MusicSeparationResult />
-        </div>
-    </div>
-</template>
-
-<script setup lang="ts">
-import MusicSeparationMain from "@/components/music-separation/MusicSeparationMain.vue";
-import MusicSeparationResult from "@/components/music-separation/MusicSeparationResult.vue";
-import { useSeparateStore } from "@/stores/separate";
-
-const store = useSeparateStore();
-</script>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f923bd7197b658e9199f5ff5747bbe9220c1e2abce2ead6ea4f331d2acbd1e15
+size 1468
