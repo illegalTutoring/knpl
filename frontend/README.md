@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d9f5f295cb1a78be604acbaafdf91e920d9f18c23f70d8c275ef0f6a71f561ec
-size 1610
+# frontend
+
+This template should help get you started developing with Vue 3 in Vite.
+
+# 1. 셋팅시 필요한것
+
+- version
+  - node.js: 20.11.1
+  - npm : 10.2.4
+  - VSCODE: Vue - official 설치
+
+위 사항들을 설치한 후 
+
+ ```npm i install```
+
+
