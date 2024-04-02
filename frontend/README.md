@@ -1,8 +1,4 @@
-# frontend
-
-This template should help get you started developing with Vue 3 in Vite.
-
-# 1. 셋팅시 필요한것
+# 프론트엔드 세팅
 
 - version
   - node.js: 20.11.1
