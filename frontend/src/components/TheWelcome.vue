@@ -4,6 +4,6 @@ import ImageSlide from './image-slide/ImageSlide.vue';
 
 <template>
     <div>
-		    <ImageSlide/>
+        <ImageSlide />
     </div>
 </template>
