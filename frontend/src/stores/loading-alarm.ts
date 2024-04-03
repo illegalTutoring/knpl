@@ -1,8 +1,8 @@
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
 
 export const useLoadingAlarmStore = defineStore('loadingalram', () => {
-    const loadingAlarm = ref(false)
-    return { loadingAlarm }
-})
+    const loadingAlarm = ref(false);
+    return { loadingAlarm };
+});
