@@ -1,0 +1,1 @@
+메뉴얼을 참고하여 hubert pretrained 데이터를 받아오세요
