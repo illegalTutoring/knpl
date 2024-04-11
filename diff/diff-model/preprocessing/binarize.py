@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3b946be7100399504e2f6cded3718c3dafff60a362d26fb4124cd5a8e932654
-size 605
+import os
+
+os.environ["OMP_NUM_THREADS"] = "1"
+
+import sys
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)),'../'))
+
+import importlib
+from utils.hparams import set_hparams, hparams
+
+def binarize():
+    binarizer_cls = hparams.get("binarizer_cls", 'basics.base_binarizer.BaseBinarizer')
+    pkg = ".".join(binarizer_cls.split(".")[:-1])
+    cls_name = binarizer_cls.split(".")[-1]
+    binarizer_cls = getattr(importlib.import_module(pkg), cls_name)
+    print("| Binarizer: ", binarizer_cls)
+    binarizer_cls().process()
+
+
+if __name__ == '__main__':
+    set_hparams()
+    binarize()

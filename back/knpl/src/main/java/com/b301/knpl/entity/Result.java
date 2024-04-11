@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e41b74f03e0f1d790c760e90f912164ab467962cf1e3b0a4c241642bf552ecb
-size 627
+package com.b301.knpl.entity;
+
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class Result {
+
+    private Separation separation;
+    private SVC svc;
+    private Mix mix;
+    private SVCMix svcMix;
+
+    // 생성자, 게터, 세터 등 필요한 메서드들을 추가할 수 있습니다.
+    @Builder
+    public Result(Separation separation, SVC svc, Mix mix, SVCMix svcMix) {
+        this.separation = separation;
+        this.svc = svc;
+        this.mix = mix;
+        this.svcMix = svcMix;
+    }
+}

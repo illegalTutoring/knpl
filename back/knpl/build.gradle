@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:472a868df9f3cd157cc405cc209ffaa7b589e58465a84e88b3b5cfe6630110fb
-size 1259
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.3'
+    id 'io.spring.dependency-management' version '1.1.4'
+    id "org.sonarqube" version "4.4.1.3373"
+}
+
+group = 'com.b301'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // swagger
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+
+    //webClient
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+}
+
+// sonarqube
+sonar {
+    properties {
+        property "sonar.projectKey", "S10P22B301-Back"
+        property "sonar.projectName", "S10P22B301-Back"
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

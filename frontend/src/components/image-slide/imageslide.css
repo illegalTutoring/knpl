@@ -1,3 +1,174 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c289b94059d8ab9284204ead459b49b5536db7d0a6ed5b12f918c873e7576bbe
-size 4171
+.container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    transition: background-image 1s ease, opacity 1s ease;
+    opacity: 1; /* 초기 투명도 설정 */
+    transform: translateY(0);
+}
+
+.container.hidden {
+    opacity: 0;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 100%;
+    max-height: 100vh;
+    flex: 0 0;
+}
+
+.carousel-item img {
+    width: 100%; /* 수정: 이미지의 원래 비율을 유지하면서 너비 조정 */
+    height: 100vh; /* 수정: 컨테이너 높이에 맞춰 최대 높이 조정 */
+    object-fit: hidden; /* 수정: 컨테이너 내에서 이미지를 적절히 맞추도록 변경 */
+}
+
+.overlay {
+    margin-left: 5%;
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    width: 40vw;
+    height: 150px;
+    padding: 20px;
+    top: 60%; /* 상하 중앙 위치 */
+    left: 20%; /* 좌우 중앙 위치 */
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px); /* 블러 효과 적용 */
+    background: rgba(0, 0, 0, 0.1); /* 반투명 배경 */
+    color: white;
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.1); /* 주변 그림자 효과를 부드럽게 */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* 이 경우, h1 태그의 스타일을 적절히 조정해야 합니다. */
+.overlay h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+.overlay.transitioning h1,
+.overlay.transitioning p {
+    animation: fadeOut 0.1s forwards;
+}
+
+.overlay h1,
+.overlay p {
+    animation: slideUp 0.1s ease-out;
+    animation-fill-mode: both; /* 애니메이션의 최종 상태를 유지 */
+    animation-delay: 0.1s; /* 캐러셀 전환 지속 시간과 일치해야 함 */
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+    transition: opacity 0.1s ease;
+}
+
+.slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active in <2.1.8 */ {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Previous 버튼 스타일 */
+.prev-area,
+.next-area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* 클릭 가능한 영역의 너비 */
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev-area {
+    left: 0;
+}
+
+.next-area {
+    right: 0;
+}
+
+.carousel-position-indicator {
+    position: absolute;
+    bottom: 0px; /* 하단에서부터의 거리 */
+    width: 50%;
+    height: 30px;
+    left: 50%; /* 중앙 정렬 */
+    transform: translateX(-50%); /* 정확히 중앙에 위치하도록 조정 */
+    color: #ffffff; /* 텍스트 색상 */
+    font-size: 20px; /* 텍스트 크기 */
+    z-index: 10; /* 다른 요소 위에 표시되도록 z-index 설정 */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.indicator-container {
+    height: 4px;
+    background-color: #e0e0e0; /* 인디케이터 배경색 */
+    margin-top: 20px;
+}
+
+.indicator {
+    height: 100%;
+    background-color: #1565c0; /* 인디케이터 활성색 */
+    transition: width 0.5s ease; /* 부드러운 전환 효과 */
+}
+
+.image-slider .el-slider__button {
+    width: 30px; /* 새 마크 이미지에 맞는 너비 */
+    height: 10px; /* 새 마크 이미지에 맞는 높이 */
+    border-radius: 20%; /* 원형으로 만들기 위해 */
+    background-color: #d03131;
+    border: #000000;
+    color: #000000;
+}
+
+.image-slider .el-slider__bar {
+    background: #888888;
+    background-color: transparent;
+    display: flex;
+    align-items: center; /* 세로축 기준으로 중앙 정렬 */
+}
+
+.image-slider .el-slider__runway-container {
+    display: flex;
+    align-items: center; /* 세로축 기준으로 중앙 정렬 */
+}
+
+.image-slider .el-slider__runway {
+    background: #444444;
+}

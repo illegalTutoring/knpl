@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c9c149401c6e04546f49a66eef8685401095d9ee73e6c3afb91ed9b4c93bbd2
-size 1114
+package com.b301.knpl.entity;
+
+
+import com.b301.knpl.dto.SeparationDto;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.data.mongodb.core.mapping.FieldType;
+
+import java.util.List;
+
+@Getter
+@Document(collection = "task")
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class Task {
+
+    @Id
+    @Field(value = "_id", targetType = FieldType.OBJECT_ID)
+    private String id;
+    @Field(value="original_file", targetType = FieldType.OBJECT_ID)
+    private String originalFile;
+    private Result result;
+    private String outputExtension;
+
+    @Builder
+    public Task(String originalFile, Result result, String outputExtension) {
+        this.originalFile = originalFile;
+        this.result = result;
+        this.outputExtension = outputExtension;
+    }
+}
