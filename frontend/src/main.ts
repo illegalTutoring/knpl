@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14db93eb7d5eb98cb15e73595d0af03ca78d0b548ec96521894955bb5814689c
-size 214
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
+
+import App from "./App.vue";
+import router from "./router";
+
+const app = createApp(App);
+
+app.use(createPinia());
+app.use(router);
+app.use(ElementPlus);
+
+app.mount("#app");
